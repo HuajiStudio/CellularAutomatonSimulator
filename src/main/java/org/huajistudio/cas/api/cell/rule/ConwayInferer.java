@@ -5,7 +5,7 @@ import org.huajistudio.cas.api.cell.CellMatrix;
 import org.huajistudio.cas.common.cell.conway.ConwayCells;
 
 public abstract class ConwayInferer implements CellInferer {
-    abstract Cell generation(int count, Cell current);
+    public abstract Cell generation(int count, Cell current);
 
     @Override
     public Cell generate(CellMatrix matrix) {
